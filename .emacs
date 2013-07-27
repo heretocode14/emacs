@@ -1,5 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/plugins")
-(require 'brightscript-mode)
+;;(require 'brightscript-mode)
 (require 'php-mode)
 
 (setq default-tab-width 4)

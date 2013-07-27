@@ -2,6 +2,10 @@
 (require 'brightscript-mode)
 (require 'php-mode)
 
+;; Actionscript mode
+(autoload 'actionscript-mode "actionscript-mode" "Major mode for actionscript." t)
+(add-to-list 'auto-mode-alist '("\\.as$" . actionscript-mode))
+
 (setq default-tab-width 4)
 ;;(global-set-key (kbd "TAB") 'tab-to-tab-stop);
 ;;(setq indent-tabs-mode t)
@@ -34,3 +38,6 @@
 ;;(add-to-list 'load-path "/path/to/autopair") ;; comment if autopair.el is in standard load path 
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
+
+;; Add config scripts that depend on .emacs.d/plugins are already loaded
+(add-to-list 'load-path "~/.emacs.d/plugins-post")

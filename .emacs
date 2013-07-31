@@ -41,3 +41,6 @@
 
 ;; Add config scripts that depend on .emacs.d/plugins are already loaded
 (add-to-list 'load-path "~/.emacs.d/plugins-post")
+
+;; Will update buffers when the corresponding file is updated on disc
+(global-auto-revert-mode t)

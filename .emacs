@@ -44,3 +44,8 @@
 
 ;; Will update buffers when the corresponding file is updated on disc
 (global-auto-revert-mode t)
+
+(add-to-list 'load-path "~/.emacs.d/plugins/jshint")
+(require 'flymake-jshint)
+(add-hook 'javascript-mode-hook
+     (lambda () (flymake-mode t)))

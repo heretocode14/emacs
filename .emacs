@@ -45,10 +45,11 @@
 ;; Will update buffers when the corresponding file is updated on disc
 (global-auto-revert-mode t)
 
-(add-to-list 'load-path "~/.emacs.d/plugins/jshint")
-(require 'flymake-jshint)
-(add-hook 'javascript-mode-hook
-     (lambda () (flymake-mode t)))
+;; JsHint
+;;(add-to-list 'load-path "~/.emacs.d/plugins/jshint")
+;;(require 'flymake-jshint)
+;;(add-hook 'javascript-mode-hook
+;;     (lambda () (flymake-mode t)))
 
 ;; Auto-complete
 (add-to-list 'load-path "~/.emacs.d/plugins/auto-complete")
@@ -63,3 +64,21 @@
 (setq ac-auto-start 2)
 ; case sensitivity is important when finding matches
 (setq ac-ignore-case nil)
+
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
+
+;;(flymake-mode t) 
+;;(require 'flymake-easy)
+
+(require 'flymake-jslint)
+(add-hook 'js-mode-hook 'flymake-jslint-load)
+;; set to ultra strict
+(setq flymake-jslint-args nil)
+
+;; Flymake cursor for JsLint
+(require 'flymake-cursor)
+

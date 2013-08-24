@@ -2,6 +2,14 @@
 (require 'brightscript-mode)
 (require 'php-mode)
 
+;; line numbers
+(global-linum-mode t)
+
+;; Nicer buffer switching
+(iswitchb-mode 1)
+(setq iswitchb-buffer-ignore '("^ " "*Completions*" "*Shell Command Output*"
+               "*Messages*" "Async Shell Command"))
+
 ;; Actionscript mode
 (autoload 'actionscript-mode "actionscript-mode" "Major mode for actionscript." t)
 (add-to-list 'auto-mode-alist '("\\.as$" . actionscript-mode))

@@ -1,28 +1,28 @@
-((("static" .
-   [3 0 0 0 0 0])
-  ("user" .
-   [1 0 0 0])
-  ("AdGroup" .
-   [0 0 2 0 0 0 0])
-  ("NORMAL" .
-   [0 0 0 2 0 0])
+((("var" .
+   [1 0 0])
   ("function" .
    [2 0 0 0 0 0 0 0])
-  ("var" .
-   [1 0 0])
-  ("private" .
-   [1 0 0 0 0 0 0])
-  ("MySQLDatabase" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("public" .
-   [2 0 0 0 0 0])
-  ("$this" .
+  ("NORMAL" .
+   [0 0 0 2 0 0])
+  ("AdGroup" .
+   [0 0 2 0 0 0 0])
+  ("user" .
+   [1 0 0 0])
+  ("config" .
+   [1 0 0 0 0 0])
+  ("basePath" .
+   [0 0 0 0 0 1 0 0])
+  ("files" .
    [1 0 0 0 0])
-  ("dbConnection" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("Database" .
-   [1 0 0 0 0 0 0 0])
-  ("getConnection" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("DataFetcher" .
-   [0 0 0 0 0 1 0 0 0 0 0])))
+  ("autoWatch" .
+   [0 0 0 0 1 0 0 0 0])
+  ("true" .
+   [1 0 0 0])
+  ("browsers" .
+   [0 0 0 0 1 0 0 0])
+  ("junitReporter" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("outputFile" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("suite" .
+   [1 0 0 0 0])))

@@ -2,6 +2,14 @@
 (require 'brightscript-mode)
 (require 'php-mode)
 
+;; binding my own key combos
+; similar to vim's o 
+(global-set-key (kbd "C-c o") (lambda()
+	(interactive)
+	(move-end-of-line nil)
+	(newline nil)
+	(indent-for-tab-command)))
+
 ;; line numbers
 (global-linum-mode t)
 
@@ -89,4 +97,7 @@
 
 ;; Flymake cursor for JsLint
 (require 'flymake-cursor)
+
+;; vi emulation
+;;(require 'viper)
 

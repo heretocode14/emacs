@@ -10,6 +10,13 @@
 	(newline nil)
 	(indent-for-tab-command)))
 
+; similar to vim's O
+(global-set-key (kbd "C-c O") (lambda()
+	(interactive)
+	(move-beginning-of-line nil)
+	(newline nil)
+	(previous-line nil)))
+
 ;; line numbers
 (global-linum-mode t)
 
